@@ -22,6 +22,27 @@ bakery2 = Bakery.new()
 bakery3 = Bakery.new()
 bakery4 = Bakery.new()
 
-dessert1 = Bakery.new()
+dessert1 = Dessert.new(bakery1)
+dessert2 = Dessert.new(bakery2)
+dessert3 = Dessert.new(bakery2)
+dessert4 = Dessert.new(bakery3)
+dessert5 = Dessert.new(bakery3)
+dessert6 = Dessert.new(bakery3)
+dessert7 = Dessert.new(bakery4)
+
+ingredient1 = Ingredient.new(dessert1, 10)
+ingredient2 = Ingredient.new(dessert1, 20)
+ingredient3 = Ingredient.new(dessert2, 40)
+ingredient4 = Ingredient.new(dessert3, 150)
+ingredient5 = Ingredient.new(dessert4, 120)
+ingredient6 = Ingredient.new(dessert5, 130)
+ingredient7 = Ingredient.new(dessert5, 130)
+ingredient8 = Ingredient.new(dessert6, 120)
+ingredient9 = Ingredient.new(dessert7, 150)
+ingredient10 = Ingredient.new(dessert7, 110)
+ingredient11 = Ingredient.new(dessert1, 190)
+
+p "Returns all instances of Bakery, Dessert, and Ingredient"
+p Bakery.all.length == 4 && Dessert.all.length == 7 && Ingredient.all.length == 11
 
 Pry.start

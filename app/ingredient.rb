@@ -1,7 +1,7 @@
 class Ingredient
     @@all = []
 
-    attr_reader calorie_count, :dessert
+    attr_accessor :calorie_count, :dessert
 
     def initialize(dessert, calorie_count)
         @calorie_count = calorie_count
