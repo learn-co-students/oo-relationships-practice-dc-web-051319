@@ -7,14 +7,6 @@ class Trip
         @@all << self
     end
 
-    def listing 
-        self.listing
-    end
-
-    def guest
-        self.guest
-    end
-
     def self.all
         @@all
     end
