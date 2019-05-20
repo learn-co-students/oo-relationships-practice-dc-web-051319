@@ -2,5 +2,6 @@
 
 source "https://rubygems.org"
 
-gem 'pry'
+gem 'irb'
+gem 'pry-byebug'
 gem 'require_all'
