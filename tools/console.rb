@@ -45,4 +45,25 @@ ingredient11 = Ingredient.new("Blueberries", dessert1, 190)
 p "Returns all instances of Bakery, Dessert, and Ingredient"
 p Bakery.all.length == 4 && Dessert.all.length == 7 && Ingredient.all.length == 11
 
-binding.pry
+# Gym
+ash = Trainer.new("Ash")
+gary = Trainer.new("Gary")
+sabrina = Trainer.new("Sabrina")
+
+pallet = Location.new("Pallet Town")
+saffron = Location.new("Saffron City")
+
+join1 = Train_Loc.new(ash, pallet)
+join2 = Train_Loc.new(gary, pallet)
+join3 = Train_Loc.new(sabrina, saffron)
+
+pikachu = Client.new("Pikachu")
+pikachu.assign_trainer(ash)
+
+eevee = Client.new("Eevee")
+eevee.assign_trainer(gary)
+
+charmander = Client.new("Charmander")
+charmander.assign_trainer(ash)
+
+p Location.least_clients
