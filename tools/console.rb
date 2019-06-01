@@ -56,15 +56,24 @@ end
 # trip16 = Trip.new(listing1, guest2)
 # trip17 = Trip.new(listing3, guest13)
 
-p1 = Passenger.new("Bruce")
-p2 = Passenger.new("Sean")
-p3 = Passenger.new("Mandy")
-d1 = Driver.new("Mike")
-d2 = Driver.new("Peter")
-d3 = Driver.new("Andrew")
-r1 = Ride.new(p1, d2, 39.80)
-r2 = Ride.new(p3, d3, 32.29)
-r3 = Ride.new(p1, d1, 15.04)
-r4 = Ride.new(p2, d1, 60.51)
-r5 = Ride.new(p1,d2, 55.00 )
+# p1 = Passenger.new("Bruce")
+# p2 = Passenger.new("Sean")
+# p3 = Passenger.new("Mandy")
+# d1 = Driver.new("Mike")
+# d2 = Driver.new("Peter")
+# d3 = Driver.new("Andrew")
+# r1 = Ride.new(p1, d2, 39.80)
+# r2 = Ride.new(p3, d3, 32.29)
+# r3 = Ride.new(p1, d1, 15.04)
+# r4 = Ride.new(p2, d1, 60.51)
+# r5 = Ride.new(p1,d2, 55.00 )
+
+bakery1 = Bakery.new("Rahat Bakery")
+dessert1 = Dessert.new("Baklava", bakery1)
+# d2 = Dessert.new("Sweets", bakery1)
+ingredient1 = Ingredient.new("Walnuts", dessert1, 30)
+ingredient2 = Ingredient.new("Butter" , dessert1, 90)
+
+
+
 Pry.start
